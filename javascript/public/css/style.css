@@ -1,0 +1,98 @@
+/*    lOGIN PAGE      */
+
+.body{
+  text-align: center;
+  padding: 7% 15%;
+  background-image:url("https://www.groovypost.com/wp-content/uploads/2021/04/email-laptop-featured.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color:#660000;
+}
+
+.form{
+  padding: 1% 15%;
+}
+
+.div{
+  padding: 0 20%;
+  margin-bottom: 1%;
+}
+
+.col-8:hover{
+  border-color: black;
+  opacity:0.7;
+}
+
+.button{
+  background-color:black;
+  color:#6666ff;
+}
+
+button:hover{
+opacity:0.9;
+}
+
+.col-8{
+  background-color: #00e6e6;
+  padding: 3%;
+  margin: 10px;
+  border: 2px solid;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+/*    HOME PAGE      */
+
+.body2{
+  text-align: center;
+  background-color:#E4E9FD;
+    background:linear-gradient(65deg,#A683E3 30%,#94d4f2 50%);
+  padding: 3% 7%;
+
+}
+
+.navbar{
+  padding: 1% 7%;
+  margin-bottom: 4%;
+}
+
+.btn1{
+  background-color: 	 black;
+  color:#fff;
+  margin-top: 4%;
+}
+.btn1:hover{
+  background-color: #99ddff;
+}
+
+
+
+.form2{
+  background:#1ffffb;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  margin:16px;
+}
+
+.compose{
+  padding: 7% 15%;
+  background:linear-gradient(65deg,#3d9af2 30%,#048dba 10%);
+}
+
+.email2{
+  margin-right: 20%;
+  padding: 1%;
+}
+
+.e1{
+    border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  border-color: inherit;
+  margin: 10px 2px 10px 5px;
+}
+.l1{
+  font-size: 10px;
+}

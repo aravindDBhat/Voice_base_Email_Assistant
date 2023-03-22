@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>New_Mail</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </head>
+  <body class="compose">
+      <nav class="navbar navbar-expand-lg navbar-dark ">
+    <a class="navbar-brand" href=""><b>Email assistant</b></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="http://localhost:3000/home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://localhost:3000/home"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://localhost:3000">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+    <div class="container">
+      <form class="form2" onsubmit="sendEmail();reset();return false" method="post">
+        <div container>
+          <input id="email2" class="e1 email2 col-4" type="email" name="email2" value="" placeholder="To:Email_Id">
+        </div>
+        <div container >
+          <textarea class="e1 container" id="subject" name="subject" rows="2" cols="" placeholder="subject"></textarea>
+        </div>
+        <div container>
+          <textarea class="e1 container" id="msg" name="msg" rows="5" cols="" placeholder="Write here"></textarea><br>
+        </div >
+        <button id="btnid" class="e1 btn btn-sm btn-primary col-2"type="submit" name="button">Send</button>
+      </form>
+    </div>
+    <script src="compose.js"></script>
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    <script type="text/javascript">
+    function sendEmail(){
+      Email.send({
+          Host : "smtp.elasticemail.com",
+          Username : "your email id",
+          Password : "password from elasticemail",
+          To: document.getElementById("email2").value,
+          From :"above mentioned mail id",
+          Subject:document.getElementById("subject").value,
+          Body :  document.getElementById("msg").value,
+      }).then(
+        message =>{ alert(message)
+          t=message;
+          console.log(t);
+        });
+    }
+    </script>
+  </body>
+</html>
